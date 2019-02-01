@@ -3,8 +3,8 @@
 exports.up = function(knex) {
   return knex.schema.createTable('moonphase', (table) => {
     table.increments() // id
-    table.string('title').notNullable()
     table.string('phase').notNullable()
+    table.string('title').notNullable()
     table.text('description').notNullable()
     table.text('symptomatic_experience').notNullable()
     table.text('mindful_ways').notNullable()
